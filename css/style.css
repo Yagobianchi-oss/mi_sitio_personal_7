@@ -47,9 +47,7 @@ h1 {
 header {
     background-image: url(../img/granoscafe.jpg);
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 
@@ -67,7 +65,12 @@ header nav ul{
     
 }
 
-header nav ul li a{
+.hamburguesa{
+    color:#fdf6e3;
+    border: 1px solid #fdf6e3;
+    font-size: 2rem;
+}
+.link-menu{
     color: #fdf6e3;
     font-size: 1.75rem;
     font-weight: bold;
@@ -78,16 +81,17 @@ header nav ul li a{
 
 }
 
-header nav ul li a:visited{
+.link-menu:visited{
     color: #a083ff;
 
 }
 
-header nav ul li a:hover{
+.link-menu:hover{
     background-color: #625151;
+    color: #fdf6e3;
 }
 
-header nav ul li a:active{
+.link-menu:active{
     text-decoration: underline;
 }
 

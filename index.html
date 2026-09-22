@@ -5,28 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codigo Cafe | Inicio</title>
+
+    <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <a href="#"><img src="./img/logo-header.webp" alt="Logo de la empresa"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Incio</a></li>
-                <li><a href="./pages/galeria.html">Galeria</a></li>
-                <li><a href="./pages/menu.html">Menu</a></li>
-                <li><a href="./pages/favoritos.html">Favoritos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg >
+            <div class=" container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="./img/logo-header.webp" alt="Logo de la empresa"></a>
+            <!-- boton hamburguesa -->
+            <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                ☰
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="./pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="./pages/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="./pages/favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
     </header>
 
     <main>
@@ -78,6 +104,8 @@
         </ul>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <!-- script de bs -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

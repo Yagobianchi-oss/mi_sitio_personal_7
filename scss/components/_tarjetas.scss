@@ -1,0 +1,48 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+.tarjeta {
+    @include flex (column, null, null, 0.5rem);
+    width: 90%;
+    background-color: $color-tarjeta;
+    margin: 2rem;
+    
+    h2 {
+        color: $color-claro;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+
+    }
+
+    @extend %texto;
+}
+
+.tarjetafigure {
+    @include flex (column, null, null, null);
+    width: 100%;
+    background-color: $color-tarjeta;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    &:focus {
+           box-shadow: $sombra;
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+
+    }
+
+    @extend %texto;
+}

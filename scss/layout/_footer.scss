@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+
+footer {
+    background-image: url(../img/footer.jpg);
+    color: $color-claro;
+    font-size: 1.25;
+    display: flex;
+    justify-content: space-between;
+
+}

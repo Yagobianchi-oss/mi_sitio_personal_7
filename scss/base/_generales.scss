@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+body {
+    font-family: $fuente;
+    font-weight: 400;
+    font-style: normal;
+    background-image: $fondo-body;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    @include flex (null, space-evenly, null, null)
+}

@@ -59,35 +59,69 @@
     <main>
         <h1>Conoce nuestros espacios</h1>
 
-        <section class="galeriagrid">
-            <article>
-                <figure class="tarjetafigure" tabindex="0">
-                    <img src="../img/interior1.webp" alt="Un salon de cafeteria">
-                    <figcaption>Conoce nuestro salon</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure class="tarjetafigure" tabindex="0">
-                    <img src="../img/interior2.webp" alt="Un patio de cafeteria">
-                    <figcaption>El mejor patio</figcaption>
-                </figure>
-            </article>
+        <div class="movil">
+            <div id="carouselExample" class="carousel slide">
+                
+                <!-- imagenes -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/interior2.webp" class="d-block w-100" alt="Un patio de cafeteria">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carrusel1.jpg" class="d-block w-100" alt="Un patio de cafeteria con mozos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carrusel2.jpg" class="d-block w-100" alt="Un patio de cafeteria de noche">
+                    </div>
+                </div>
+                <!-- botonera -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
-            <article>
-                <figure class="tarjetafigure" tabindex="0">
-                    <img src="../img/interior3.webp" alt="Vista desde el mostrador de nuestra cafeteria">
-                    <figcaption>El diseño del interior de nuestra cafeteria</figcaption>
-                </figure>
-            </article>
+        <div class="escritorio">
+            <section class="galeriagrid">
+                <article class="gitem1">
+                    <figure class="tarjetafigure" tabindex="0">
+                        <img src="../img/interior1.webp" alt="Un salon de cafeteria">
+                        <figcaption>Conoce nuestro salon</figcaption>
+                    </figure>
+                </article>
+                <article class="gitem2">
+                    <figure class="tarjetafigure" tabindex="0">
+                        <img src="../img/interior2.webp" alt="Un patio de cafeteria">
+                        <figcaption>El mejor patio</figcaption>
+                    </figure>
+                </article>
 
-            <article>
-                <figure class="tarjetafigure" tabindex="0">
-                    <img src="../img/interior4.webp" alt="Vista general del patio">
-                    <figcaption>El mejor lugar para tener una buena merienda</figcaption>
-                </figure>
-            </article>
+                <article class="gitem3">
+                    <figure class="tarjetafigure" tabindex="0">
+                        <img src="../img/interior3.webp" alt="Vista desde el mostrador de nuestra cafeteria">
+                        <figcaption>El diseño del interior de nuestra cafeteria</figcaption>
+                    </figure>
+                </article>
 
-        </section>
+                <article class="gitem4">
+                    <figure class="tarjetafigure" tabindex="0">
+                        <img src="../img/interior4.webp" alt="Vista general del patio">
+                        <figcaption>El mejor lugar para tener una buena merienda</figcaption>
+                    </figure>
+                </article>
+
+            </section>
+        </div>
+
+
+
 
     </main>
 

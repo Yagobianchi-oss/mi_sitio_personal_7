@@ -1,0 +1,21 @@
+@mixin flex ($direccion, $justificacion, $alineacion, $gap){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificacion;
+    align-items: $alineacion;
+    gap: $gap;
+}
+
+@mixin grid ($columnas, $filas, $gap, $areas){
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    gap: $gap;
+    grid-template-areas: $areas;
+}
+
+@mixin escritorio {
+    @media (min-width: 1024px){
+        @content;
+    }
+}

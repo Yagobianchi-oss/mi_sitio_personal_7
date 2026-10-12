@@ -1,0 +1,215 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+main {
+    @include flex (column, space-around, center, 1rem);
+
+    h1 {
+        font-family: $fuente;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 2.8125rem;
+    }
+
+    .hero {
+        background-color: $color-hero;
+        padding: 1rem;
+        margin: 3rem;
+        @include flex (column, null, center, null);
+
+        h2 {
+            font-size: 2rem;
+            color: $color-claro;
+        }
+
+        a {
+            color: $color-claro;
+            background-color: $color-fondo-hero-a;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            transition: all 0.5s;
+
+            &:visited {
+                color: $color-visited;
+            }
+            
+            &:hover {
+                background-color: $color-hero-hover;
+            }
+            &:active{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    
+
+    .indexgrid {
+        @include grid (1fr, null, 1rem, "item1" "item2" "item3");
+    }
+
+    .item1 {
+    grid-area: item1;
+
+    }
+
+    .item2 {
+        grid-area: item2;
+
+    }
+
+    .item3 {
+        grid-area: item3;
+
+    }
+    
+    @media (min-width:768px) {
+        .indexgrid {
+            
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            grid-template-areas:
+                "item1  item2"
+                "item3  item3  ";
+        }
+
+    }
+
+    @media (min-width:1024px) {
+        .indexgrid {
+            
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            grid-template-areas:
+                "item1  item2   item3";
+        }
+
+    }
+
+    .favgrid {
+        @include grid (1fr, null, 1rem, "fitem1" "fitem2" "fitem3");
+    }
+
+    .fitem1 {
+        grid-area: fitem1;
+
+    }
+
+    .fitem2 {
+        grid-area: fitem2;
+
+    }
+
+    .fitem3 {
+        grid-area: fitem3;
+
+    }
+    
+    @media (min-width:768px) {
+        .favgrid {
+            
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            grid-template-areas:
+                "fitem1  fitem2"
+                "fitem3  fitem3  ";
+        }
+
+    }
+
+    @media (min-width:1024px) {
+        .favgrid {
+            
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            grid-template-areas:
+                "fitem1  fitem2   fitem3";
+        }
+
+    }
+
+    label {
+        font-size: 1.5rem;
+        color: $color-tarjeta;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    legend {
+        font-size: 1.8rem;
+        color: $color-tarjeta;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    form {
+        background-color: $color-claro;
+    }
+    .divmenu {
+        @include flex (null, space-evenly, null, null);
+        background-color: $color-fondo-menu;
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+        
+        h2 {
+            color:$color-claro;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        li {
+            @include flex (column, null, null, 1rem);
+        }
+    }
+
+
+    .mitem1 {
+    grid-area: mitem1;
+
+    }
+
+    .mitem2 {   
+    grid-area: mitem2;
+
+    }
+
+    .mitem3 {   
+    grid-area: mitem3;
+
+    }
+
+    .mitem4 {   
+    grid-area: mitem4;
+    }
+
+    .menugrid {  
+        @include grid (1fr, null, 1rem, "mitem1" "mitem2" "mitem3" "mitem4");
+    }
+
+    @media (min-width:768px) {  
+    .menugrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-template-areas:
+            "mitem1  mitem2"
+            "mitem3  mitem4";
+    }
+
+
+    }
+
+    @media (min-width:1024px) {
+        .menugrid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            grid-template-areas:
+                "mitem1  mitem2   mitem3"
+                "mitem4  mitem4   mitem4";
+        }
+    }
+
+}

@@ -67,9 +67,11 @@ header .link-menu:visited {
 header .link-menu:hover {
   background-color: #625151;
   color: #fdf6e3;
+  transform: scale(1.1);
 }
 header .link-menu:active {
   text-decoration: underline;
+  transform: scale(0.4);
 }
 
 main {
@@ -85,6 +87,17 @@ main h1 {
   font-style: normal;
   font-size: 2.8125rem;
 }
+@keyframes halo {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 15px 10px #820606;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
 main .hero {
   background-color: #820606;
   padding: 1rem;
@@ -92,6 +105,9 @@ main .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: halo;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 main .hero h2 {
   font-size: 2rem;
@@ -110,9 +126,11 @@ main .hero a:visited {
 }
 main .hero a:hover {
   background-color: #f95f5f;
+  transform: scale(1.1);
 }
 main .hero a:active {
   text-decoration: underline;
+  transform: scale(0.4);
 }
 main .indexgrid {
   display: grid;
@@ -294,6 +312,12 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+footer img {
+  width: 50px;
+}
+footer ul {
+  list-style: none;
+}
 
 .tarjeta {
   display: flex;
@@ -302,6 +326,7 @@ footer {
   width: 90%;
   background-color: #730015;
   margin: 2rem;
+  overflow: hidden;
 }
 .tarjeta h2 {
   color: #fdf6e3;
@@ -313,6 +338,10 @@ footer {
   width: 100%;
   height: 150px;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+.tarjeta img:hover {
+  transform: scale(1.1);
 }
 
 .tarjetafigure {
@@ -323,6 +352,7 @@ footer {
   margin-bottom: 2rem;
   margin-top: 2rem;
   margin-left: 2rem;
+  overflow: hidden;
 }
 .tarjetafigure:focus {
   box-shadow: 5px 5px 10px #730015;
@@ -331,6 +361,10 @@ footer {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+.tarjetafigure img:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

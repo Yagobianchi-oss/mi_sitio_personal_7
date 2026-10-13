@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;900&display=swap" rel="stylesheet">
+    
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -90,32 +93,42 @@
 
         <div class="escritorio">
             <section class="galeriagrid">
-                <article class="gitem1">
-                    <figure class="tarjetafigure" tabindex="0">
-                        <img src="../img/interior1.webp" alt="Un salon de cafeteria">
-                        <figcaption>Conoce nuestro salon</figcaption>
-                    </figure>
-                </article>
-                <article class="gitem2">
-                    <figure class="tarjetafigure" tabindex="0">
-                        <img src="../img/interior2.webp" alt="Un patio de cafeteria">
-                        <figcaption>El mejor patio</figcaption>
-                    </figure>
-                </article>
-
-                <article class="gitem3">
-                    <figure class="tarjetafigure" tabindex="0">
-                        <img src="../img/interior3.webp" alt="Vista desde el mostrador de nuestra cafeteria">
-                        <figcaption>El diseño del interior de nuestra cafeteria</figcaption>
-                    </figure>
-                </article>
-
-                <article class="gitem4">
-                    <figure class="tarjetafigure" tabindex="0">
-                        <img src="../img/interior4.webp" alt="Vista general del patio">
-                        <figcaption>El mejor lugar para tener una buena merienda</figcaption>
-                    </figure>
-                </article>
+                <div class="gitem1" data-aos="fade-down" data-aos-duration="1800">
+                    <article>
+                        <figure class="tarjetafigure" tabindex="0">
+                            <img src="../img/interior1.webp" alt="Un salon de cafeteria">
+                            <figcaption>Conoce nuestro salon</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                
+                <div class="gitem2" data-aos="fade-down" data-aos-duration="1800">
+                    <article>
+                        <figure class="tarjetafigure" tabindex="0">
+                            <img src="../img/interior2.webp" alt="Un patio de cafeteria">
+                            <figcaption>El mejor patio</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                
+                <div class="gitem3" data-aos="fade-down" data-aos-duration="1800">
+                    <article >
+                        <figure class="tarjetafigure" tabindex="0">
+                            <img src="../img/interior3.webp" alt="Vista desde el mostrador de nuestra cafeteria">
+                            <figcaption>El diseño del interior de nuestra cafeteria</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                
+                <div class="gitem4" data-aos="fade-up" data-aos-duration="1800">
+                    <article>
+                        <figure class="tarjetafigure" tabindex="0">
+                            <img src="../img/interior4.webp" alt="Vista general del patio">
+                            <figcaption>El mejor lugar para tener una buena merienda</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                
 
             </section>
         </div>
@@ -141,6 +154,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- scripts de aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>        
 </body>
 
 </html>

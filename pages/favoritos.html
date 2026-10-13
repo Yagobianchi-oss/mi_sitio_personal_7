@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">     
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -58,27 +60,36 @@
     <main>
         <h1>Estos son los favoritos de nuestros clientes</h1>
         <section class="favgrid">
-            <article class="tarjeta fitem1">
-                <h2>Croissant con nutela y frutilla</h2>
+            <div class="fitem1" data-aos="fade-up" data-aos-duration="1800">
+                <article class="tarjeta">
+                    <h2>Croissant con nutela y frutilla</h2>
 
-                <img src="../img/croissant.jpg" height="200px" alt="Foto del croissant">
-                <p>Su croissant favorito!</p>
+                    <img src="../img/croissant.jpg" height="200px" alt="Foto del croissant">
+                    <p>Su croissant favorito!</p>
 
-            </article>
-            <article class="tarjeta fitem2">
-                <h2>Combo De infusion a eleccion + 2 churros</h2>
+                </article>
+            </div>
+            
+            <div class="fitem2" data-aos="fade-down" data-aos-duration="1800">
+                <article class="tarjeta">
+                    <h2>Combo De infusion a eleccion + 2 churros</h2>
 
-                <img src="../img/cafeychurros.jpg" height="200px" alt="Foto del combo infusion + churros">
-                <p>La opcion clasica de ustedes!</p>
+                    <img src="../img/cafeychurros.jpg" height="200px" alt="Foto del combo infusion + churros">
+                    <p>La opcion clasica de ustedes!</p>
 
-            </article>
-            <article class="tarjeta fitem3">
-                <h2>Combo de cafe con leche + 2 medialunas</h2>
+                </article>
+            </div>
+            
+            <div class="fitem3" data-aos="fade-up" data-aos-duration="1800">
+                <article class="tarjeta">
+                    <h2>Combo de cafe con leche + 2 medialunas</h2>
 
-                <img src="../img/cafeymedialuna.jpg" height="200px" alt="Foto del combo cafe + medialuna">
-                <p>La economica mas elegida!</p>
+                    <img src="../img/cafeymedialuna.jpg" height="200px" alt="Foto del combo cafe + medialuna">
+                    <p>La economica mas elegida!</p>
 
-            </article>
+                </article>
+            </div>
+            
 
 
         </section>
@@ -106,7 +117,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
+    <!-- scripts de aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>       
 </body>
 
 </html>

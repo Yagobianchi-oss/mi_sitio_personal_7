@@ -36,9 +36,11 @@ header {
         &:hover {
             background-color: $color-fondo-link-hover;
             color: $color-claro;
+            transform: $hover;
         }
         &:active {
             text-decoration: underline;
+            transform: $active;
         }
 
     }

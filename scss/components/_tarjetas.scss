@@ -7,6 +7,7 @@
     width: 90%;
     background-color: $color-tarjeta;
     margin: 2rem;
+    overflow: hidden;
     
     h2 {
         color: $color-claro;
@@ -19,6 +20,12 @@
         width: 100%;
         height: 150px;
         object-fit: cover;
+        transition: transform 0.5s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
 
     }
 
@@ -32,6 +39,7 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
     margin-left: 2rem;
+    overflow: hidden;
 
     &:focus {
            box-shadow: $sombra;
@@ -41,6 +49,11 @@
         width: 100%;
         height: 250px;
         object-fit: cover;
+        transition: transform 0.5s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
 
     }
 

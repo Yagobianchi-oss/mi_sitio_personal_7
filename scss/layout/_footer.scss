@@ -8,7 +8,11 @@ footer {
     background-image: url(../img/footer.jpg);
     color: $color-claro;
     font-size: 1.25;
-    display: flex;
-    justify-content: space-between;
-
+    @include flex (null,space-between, null, null );
+    img{
+        width: 50px;
+    }
+    ul{
+        list-style: none;
+    }
 }

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codigo cafe | Contacto</title>
-    <meta name="description"
-    content="Contactate con nosotros por aca. Pagina de contacto.">
+    <meta name="description" content="Contactate con nosotros por aca. Pagina de contacto.">
+    <meta name="keywords" content="Código Café, contacto, ubicación, consultas, cafetería">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,55 +22,65 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg >
-            <div class=" container-fluid">
-            <!-- logo -->
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo-header.webp"
-                    alt="Logo de la empresa"></a>
-            <!-- boton hamburguesa -->
-            <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                ☰
-            </button>
-            <!-- menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link link-menu" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-menu" href="./galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-menu" href="./menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-menu" href="./favoritos.html">Favoritos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-menu" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-header.webp"
+                        alt="Logo de la empresa"></a>
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link-menu" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-menu" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-menu" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-menu" href="./favoritos.html">Favoritos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-menu" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <h1>Contactanos</h1>
 
-        <form action="#" >
+        <form action="#">
 
             <fieldset>
-                <legend>Datos Personales</legend>
-                <label>Nombre <input type="text"></label>
-                <label>Apellido <input type="text"></label>
-                <label>Correo Electronico <input type="email"></label>
-                <label>Fecha de nacimiento <input type="date"></label>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
             </fieldset>
 
-            <label f>Comentarios <textarea name="comentario" placeholder="escribi tu comentario"></textarea></label>
-            <button value="submit">Enviar</button>
+            <label for="comentario">Comentarios</label>
+            <textarea id="comentario" name="comentario" placeholder="Escribí tu comentario"></textarea>
+
+            <button type="submit">Enviar</button>
 
         </form>
 

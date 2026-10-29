@@ -5,7 +5,7 @@
 
 
 footer {
-    background-image: url(../img/footer.jpg);
+    background-image: url(../assets/footer.jpg);
     color: $color-claro;
     font-size: 1.25;
     @include flex (null,space-between, null, null );

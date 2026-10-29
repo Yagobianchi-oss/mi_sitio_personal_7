@@ -14,7 +14,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: url(../img/fondomenu1.jpg);
+  background-image: url(../assets/fondomenu1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,7 +35,7 @@ section {
 }
 
 header {
-  background-image: url(../img/granoscafe.jpg);
+  background-image: url(../assets/granoscafe.jpg);
   width: 100%;
 }
 header nav ul {
@@ -306,7 +306,7 @@ main .menugrid {
   }
 }
 footer {
-  background-image: url(../img/footer.jpg);
+  background-image: url(../assets/footer.jpg);
   color: #fdf6e3;
   font-size: 1.25;
   display: flex;
